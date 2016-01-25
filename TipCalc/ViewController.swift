@@ -9,8 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var billAmount: Double = 100.00
-    var tipPercentage: Double = 20.00
+    let preferences = NSUserDefaults.standardUserDefaults()
+    var billAmount: Double! {
+        didSet {
+            self.preferences.setValue(billAmount, forKey: "billAmount")
+        }
+    }
+    var tipPercentage: Double! {
+        didSet {
+            self.preferences.setValue(tipPercentage, forKey: "tipPercentage")
+        }
+    }
     
     @IBOutlet var inputsView: UIView!
     @IBOutlet var totalView: UIView!
@@ -45,7 +54,7 @@ class ViewController: UIViewController {
         let incrementer = velocity / 1000
         
         if round(tipPercentage + incrementer) >= 0 {
-            tipPercentage += Double(incrementer)
+            tipPercentage = tipPercentage + Double(incrementer)
             tipInput.text = String(format: "%.00f", abs(round(tipPercentage)))
             calculateTip()
         }
@@ -64,7 +73,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        if let savedBillAmount = preferences.valueForKey("billAmount") as? Double {
+            billAmount = savedBillAmount
+        } else {
+            billAmount = 100.0
+        }
+
+        if let savedTipPercentage = preferences.valueForKey("tipPercentage") as? Double {
+            tipPercentage = savedTipPercentage
+        } else {
+            tipPercentage = 20.0
+        }
+
+        billInput.text = String(format: "%.02f", billAmount)
+        tipInput.text = String(format: "%.00f", tipPercentage)
+
         calculateTip()
+
         let translate = CGAffineTransformMakeTranslation(0, -198)
         inputsView.transform = translate
         totalView.alpha = 0
