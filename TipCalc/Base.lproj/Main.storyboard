@@ -151,6 +151,7 @@
                     </view>
                     <connections>
                         <outlet property="billInput" destination="hon-pk-hLB" id="SuA-O9-zrd"/>
+                        <outlet property="currencySymbolLabel" destination="N4Z-qy-mec" id="Qrf-b0-cE6"/>
                         <outlet property="dragIconImage" destination="YAx-RB-YQT" id="iyK-vp-oIp"/>
                         <outlet property="inputsView" destination="tOf-zW-l94" id="Ac8-UW-srw"/>
                         <outlet property="tipInput" destination="Afo-5r-YRl" id="x6h-52-JeK"/>

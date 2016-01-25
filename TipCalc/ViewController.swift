@@ -27,7 +27,8 @@ class ViewController: UIViewController {
     @IBOutlet var tipInput: UITextField!
     @IBOutlet var totalLabel: UILabel!
     @IBOutlet var dragIconImage: UIImageView!
-    
+    @IBOutlet var currencySymbolLabel: UILabel!
+
     @IBAction func onBillAmountChanged(sender: AnyObject) {
         if let billInputAmount = Double(billInput.text!) {
             billAmount = billInputAmount
@@ -85,6 +86,9 @@ class ViewController: UIViewController {
             tipPercentage = 20.0
         }
 
+        let currencySymbol = NSLocale.currentLocale().objectForKey(NSLocaleCurrencySymbol) as? String
+
+        currencySymbolLabel.text = "B I L L  ( \(currencySymbol!) )"
         billInput.text = String(format: "%.02f", billAmount)
         tipInput.text = String(format: "%.00f", tipPercentage)
 
