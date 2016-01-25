@@ -11,17 +11,17 @@
 		3842EA811C4F657D0012C3C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3842EA801C4F657D0012C3C0 /* ViewController.swift */; };
 		3842EA841C4F657D0012C3C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3842EA821C4F657D0012C3C0 /* Main.storyboard */; };
 		3842EA861C4F657D0012C3C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3842EA851C4F657D0012C3C0 /* Assets.xcassets */; };
-		3842EA891C4F657D0012C3C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3842EA871C4F657D0012C3C0 /* LaunchScreen.storyboard */; };
+		38F09E5A1C55DAA0004204F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F09E591C55DAA0004204F6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3842EA7B1C4F657D0012C3C0 /* TipCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3842EA7B1C4F657D0012C3C0 /* Tipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3842EA7E1C4F657D0012C3C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3842EA801C4F657D0012C3C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3842EA831C4F657D0012C3C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3842EA851C4F657D0012C3C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3842EA881C4F657D0012C3C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3842EA8A1C4F657D0012C3C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38F09E591C55DAA0004204F6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 		3842EA7C1C4F657D0012C3C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3842EA7B1C4F657D0012C3C0 /* TipCalc.app */,
+				3842EA7B1C4F657D0012C3C0 /* Tipper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,11 +54,11 @@
 		3842EA7D1C4F657D0012C3C0 /* TipCalc */ = {
 			isa = PBXGroup;
 			children = (
+				38F09E591C55DAA0004204F6 /* LaunchScreen.storyboard */,
 				3842EA7E1C4F657D0012C3C0 /* AppDelegate.swift */,
 				3842EA801C4F657D0012C3C0 /* ViewController.swift */,
 				3842EA821C4F657D0012C3C0 /* Main.storyboard */,
 				3842EA851C4F657D0012C3C0 /* Assets.xcassets */,
-				3842EA871C4F657D0012C3C0 /* LaunchScreen.storyboard */,
 				3842EA8A1C4F657D0012C3C0 /* Info.plist */,
 			);
 			path = TipCalc;
@@ -67,9 +67,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3842EA7A1C4F657D0012C3C0 /* TipCalc */ = {
+		3842EA7A1C4F657D0012C3C0 /* Tipper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3842EA8D1C4F657D0012C3C0 /* Build configuration list for PBXNativeTarget "TipCalc" */;
+			buildConfigurationList = 3842EA8D1C4F657D0012C3C0 /* Build configuration list for PBXNativeTarget "Tipper" */;
 			buildPhases = (
 				3842EA771C4F657D0012C3C0 /* Sources */,
 				3842EA781C4F657D0012C3C0 /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = TipCalc;
+			name = Tipper;
 			productName = TipCalc;
-			productReference = 3842EA7B1C4F657D0012C3C0 /* TipCalc.app */;
+			productReference = 3842EA7B1C4F657D0012C3C0 /* Tipper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -96,10 +96,11 @@
 				TargetAttributes = {
 					3842EA7A1C4F657D0012C3C0 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2VYA6W5DF5;
 					};
 				};
 			};
-			buildConfigurationList = 3842EA761C4F657D0012C3C0 /* Build configuration list for PBXProject "TipCalc" */;
+			buildConfigurationList = 3842EA761C4F657D0012C3C0 /* Build configuration list for PBXProject "Tipper" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -112,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3842EA7A1C4F657D0012C3C0 /* TipCalc */,
+				3842EA7A1C4F657D0012C3C0 /* Tipper */,
 			);
 		};
 /* End PBXProject section */
@@ -122,7 +123,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3842EA891C4F657D0012C3C0 /* LaunchScreen.storyboard in Resources */,
+				38F09E5A1C55DAA0004204F6 /* LaunchScreen.storyboard in Resources */,
 				3842EA861C4F657D0012C3C0 /* Assets.xcassets in Resources */,
 				3842EA841C4F657D0012C3C0 /* Main.storyboard in Resources */,
 			);
@@ -149,14 +150,6 @@
 				3842EA831C4F657D0012C3C0 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3842EA871C4F657D0012C3C0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3842EA881C4F657D0012C3C0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -247,10 +240,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TipCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thisisafter.TipCalc;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Tipper;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -258,17 +254,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TipCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thisisafter.TipCalc;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Tipper;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3842EA761C4F657D0012C3C0 /* Build configuration list for PBXProject "TipCalc" */ = {
+		3842EA761C4F657D0012C3C0 /* Build configuration list for PBXProject "Tipper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3842EA8B1C4F657D0012C3C0 /* Debug */,
@@ -277,13 +276,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3842EA8D1C4F657D0012C3C0 /* Build configuration list for PBXNativeTarget "TipCalc" */ = {
+		3842EA8D1C4F657D0012C3C0 /* Build configuration list for PBXNativeTarget "Tipper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3842EA8E1C4F657D0012C3C0 /* Debug */,
 				3842EA8F1C4F657D0012C3C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
