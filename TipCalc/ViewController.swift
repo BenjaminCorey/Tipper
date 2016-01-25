@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         var totalAmount: Double
         if billInput.text != "" {
             totalAmount = billAmount + (billAmount * (round(tipPercentage) / 100))
-            totalLabel.text = String(format: "%.02f", totalAmount)
+            totalLabel.text = formatNumberAsCurrency(totalAmount)
         } else {
             totalLabel.text = ""
         }
@@ -83,6 +83,12 @@ class ViewController: UIViewController {
             let transform = CGAffineTransformMakeScale(0.5, 0.5)
             self.dragIconImage.transform = transform
             }, completion: nil)
+    }
+
+    func formatNumberAsCurrency(number: Double) -> String {
+        let formatter = NSNumberFormatter()
+        formatter.numberStyle = .CurrencyStyle
+        return formatter.stringFromNumber(number)!
     }
 }
 
