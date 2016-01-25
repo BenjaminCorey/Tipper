@@ -71,13 +71,13 @@ class ViewController: UIViewController {
         
         UIView.animateWithDuration(0.5, delay: 0.5, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [], animations: {
             self.inputsView.transform = CGAffineTransformMakeTranslation(0, 0)
-            }, completion: {(value: Bool) in
-            self.billInput.becomeFirstResponder()
-        })
-        
-        UIView.animateWithDuration(0.5, delay: 2.0, options: [], animations: {
-            self.totalView.alpha = 1
             }, completion: nil)
+        
+        UIView.animateWithDuration(0.5, delay: 1.0, options: [], animations: {
+            self.totalView.alpha = 1
+            }, completion: {(value: Bool) in
+                self.billInput.becomeFirstResponder()
+        })
         
         UIView.animateWithDuration(0.5, delay: 0.5, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [], animations: {
             let transform = CGAffineTransformMakeScale(0.5, 0.5)
